@@ -1,0 +1,34 @@
+:root {
+  --main-text-color: #262626;
+  --accent-color: #ff0624;
+  --main-text-color: #0d0d0d;
+  --main-text-color: #666666;
+  --button-bg-color: #1db428;
+}
+
+body {
+  font-family: 'Proxima Nova Rg', sans-serif;
+  font-size: 16px;
+  background: #0d0d0d;
+}
+
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 375px) {
+    width: 375px;
+  }
+
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
+}
