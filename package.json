@@ -1,0 +1,23 @@
+{
+  "name": "vanilla-app-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=/auto-school/",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "glob": "^8.1.0",
+    "postcss": "^8.4.30",
+    "vite": "^4.0.0",
+    "vite-plugin-imagemin": "^0.6.1"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "modern-normalize": "^1.1.0",
+    "vite-plugin-full-reload": "^1.0.5",
+    "vite-plugin-html-inject": "^1.0.1"
+  }
+}
