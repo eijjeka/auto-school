@@ -1,113 +1,103 @@
-# Vanilla App Template
+# Parcel template
 
-Цей проект було створено за допомогою Vite. Для знайомства та налаштування
-додаткових можливостей [звернись до документації](https://vitejs.dev/).
+Ten projekt został stworzony przy pomocy Parcel. W celu zapoznania się i
+skonfigurowania dodatkowych opcji [zobacz dokumentację](https://parceljs.org/)
 
-## Створення репозиторію за шаблоном
+## Przygotowanie nowego projektu
 
-Використовуй цей репозиторій організації GoIT як шаблон для створення
-репозиторію свого проекту. Для цього натисни на кнопку `«Use this template»` і
-обери опцію `«Create a new repository»`, як показано на зображенні.
+1. Upewnij się, że na komputerze zainstalowana jest wersja LTS Node.js.
+   [Ściągnij i zainstaluj](https://nodejs.org/en/), jeśli jest taka potrzeba.
+2. Sklonuj to repozytorium.
+3. Zmień nazwę folderu z `parcel-project-template` na nazwę swojego projektu.
+4. Utwórz nowe, puste repozytorium na GitHub.
+5. Otwórz projekt w VSCode, uruchom terminal i zwiąż projekt z repozytorium
+   GitHub
+   [zgodnie z instrukcją](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#changing-a-remote-repositorys-url).
+6. Utwórz zależność projektu w terminalu przez polecenie `npm install` .
+7. Włącz tryb edycji, wykonując polecenie `npm start`.
+8. Przejdź w przeglądarce pod adres
+   [http://localhost:1234](http://localhost:1234). Ta strona będzie się
+   automatycznie odświeżać po dokonaniu zmian w plikach projektu.
 
-![Creating repo from a template step 1](./assets/template-step-1.png)
+## Pliki i foldery
 
-На наступному етапі відкриється сторінка створення нового репозиторію. Заповни
-поле його імені, переконайся, що репозиторій публічний, після чого натисни
-кнопку `«Create repository from template»`.
+- Wszystkie partiale plików stylów powinny znajdować się w folderze `src/sass` i
+  importować się w pliki stylów stron. Na przykład dla `index.html` plik stylów
+  nazywa się `index.scss`.
+- Obrazy dodawaj do pliku `src/images`. Moduł zbierający optymalizuje je, ale
+  tylko przy deploymencie wersji produkcyjnej projektu. Wszystko to zachodzi w
+  chmurze, aby nie obciążać twojego komputera, ponieważ na słabszym sprzęcie
+  może to zająć sporo czasu.
 
-![Creating repo from a template step 2](./assets/template-step-2.png)
+## Deployment
 
-Після того, як репозиторій буде створено, необхідно перейти в налаштування
-створеного репозиторію на вкладку `Settings` > `Actions` > `General` як показано
-на зображенні.
+Aby skonfigurować deployment projektu należy wykonać kilka dodatkowych kroków
+konfigurowania twojego repozytorium. Wejdź w zakładkę `Settings` i w podsekcji
+`Actions` wybierz punkt `General`.
 
-![Settings GitHub Actions permissions step 1](./assets/gh-actions-perm-1.png)
+![GitHub actions settings](./assets/actions-config-step-1.png)
 
-Проскроливши сторінку до самого кінця, в секції `«Workflow permissions»` обери
-опцію `«Read and write permissions»` і постав галочку в чекбоксі. Це необхідно
-для автоматизації процесу деплою проекту.
+Przejdź do ostatniej sekcji, w której upewnij się, że wybrane opcje są takie
+same jak na następnym obrazku i kliknij `Save`. Bez tych ustawień w module
+zbierającym będzie zbyt mało pozwoleń dla automatyzacji procesu deploymentu.
 
-![Settings GitHub Actions permissions step 2](./assets/gh-actions-perm-2.png)
+![GitHub actions settings](./assets/actions-config-step-2.png)
 
-Тепер у тебе є особистий репозиторій проекту, зі структурою файлів та папок
-репозиторію-шаблону. Далі працюй з ним, як з будь-яким іншим особистим
-репозиторієм, клонуй його собі на комп'ютер, пиши код, роби коміти та відправляй
-їх на GitHub.
-
-## Підготовка до роботи
-
-1. Переконайся, що на комп'ютері встановлено LTS-версію Node.js.
-   [Скачай та встанови](https://nodejs.org/en/) її якщо необхідно.
-2. Встанови базові залежності проекту в терміналі командою `npm install`.
-3. Запусти режим розробки, виконавши в терміналі команду `npm run dev`.
-4. Перейдіть у браузері за адресою
-   [http://localhost:5173](http://localhost:5173). Ця сторінка буде автоматично
-   перезавантажуватись після збереження змін у файли проекту.
-
-## Файли і папки
-
-- Файли розмітки компонентів сторінки повинні лежати в папці `src/partials` та
-  імпортуватись до файлу `index.html`. Наприклад, файл з розміткою хедера
-  `header.html` створюємо у папці `partials` та імпортуємо в `index.html`.
-- Файли стилів повинні лежати в папці `src/css` та імпортуватись до HTML-файлів
-  сторінок. Наприклад, для `index.html` файл стилів називається `index.css`.
-- Зображення додавай до папки `src/img`. Збирач оптимізує їх, але тільки при
-  деплої продакшн версії проекту. Все це відбувається у хмарі, щоб не
-  навантажувати твій комп'ютер, тому що на слабких компʼютерах це може зайняти
-  багато часу.
-
-## Деплой
-
-Продакшн версія проекту буде автоматично збиратися та деплоїтись на GitHub
-Pages, у гілку `gh-pages`, щоразу, коли оновлюється гілка `main`. Наприклад,
-після прямого пуша або прийнятого пул-реквесту. Для цього необхідно у файлі
-`package.json` змінити значення прапора `--base=/<REPO>/`, для команди `build`,
-замінивши `<REPO>` на назву свого репозиторію, та відправити зміни на GitHub.
+Wersja produkcyjna projektu będzie automatycznie gromadzić się i deployować na
+GitHub Pages w gałęzi `gh-pages` za każdym razem, gdy aktualizuje się gałąź
+`main`. Na przykład po bezpośrednim pushu lub przyjętym pull requeście. W tym
+celu niezbędne jest, aby w pliku `package.json` wyedytować pole `homepage` i
+skrypt `build`, zamieniając `your_username` i `your_repo_name` na swoje nazwy i
+wysłać zmiany na GitHub.
 
 ```json
-"build": "vite build --base=/<REPO>/",
+"homepage": "https://your_username.github.io/your_repo_name/",
+"scripts": {
+  "build": "parcel build src/*.html --public-url /your_repo_name/"
+},
 ```
 
-Далі необхідно зайти в налаштування GitHub-репозиторію (`Settings` > `Pages`) та
-виставити роздачу продакшн версії файлів з папки `/root` гілки `gh-pages`, якщо
-це не було зроблено автоматично.
+Dalej należy wejść w ustawienia repozytorium GitHub (`Settings` > `Pages`) i
+wystawić dystrybucję wersji produkcyjnej z folderu `/root` gałęzi `gh-pages`,
+jeśli nie zrobiło się to automatycznie.
 
 ![GitHub Pages settings](./assets/repo-settings.png)
 
-### Статус деплою
+### Status deploymentu
 
-Статус деплою крайнього коміту відображається іконкою біля його ідентифікатора.
+Status deploymentu ostatniego commitu wyświetla się na ikonie obok jego
+identyfikatora.
 
-- **Жовтий колір** - виконується збірка та деплой проекту.
-- **Зелений колір** - деплой завершився успішно.
-- **Червоний колір** - під час лінтингу, збірки чи деплою сталася помилка.
+- ** Żółty kolor** - wykonuje się zbudowanie i deployment projektu.
+- ** Zielony kolor** - deployment zakończył się sukcesem.
+- ** Czerwony kolor** - w czasie lintingu, budowania lub deplymentu pojawił się
+  błąd.
 
-Більш детальну інформацію про статус можна переглянути натиснувши на іконку, і в
-вікні, що випадає, перейти за посиланням `Details`.
+Więcej informacji o statusie można zobaczyć klikając na ikonkę i w wyskakującym
+oknie przejść do odnośnika `Details`.
 
-![Deployment status](./assets/deploy-status.png)
+![Deployment status](./assets/status.png)
 
-### Жива сторінка
+### Działająca strona
 
-Через якийсь час, зазвичай кілька хвилин, живу сторінку можна буде подивитися за
-адресою, вказаною на вкладці `Settings` > `Pages` в налаштуваннях репозиторію.
-Наприклад, ось посилання на живу версію для цього репозиторію
+Po jakimś czasie, zazwyczaj kilku minut, działającą stronę będzie można zobaczyć
+pod adresem wskazanym w wyedytowanej właściwości `homepage`. Na przykład tu
+znajduje się odnośnik do działającej strony dla tego repozytorium
+[https://goitacademy.github.io/parcel-project-template](https://goitacademy.github.io/parcel-project-template).
 
-[https://goitacademy.github.io/vanilla-app-template/](https://goitacademy.github.io/vanilla-app-template/).
+Jeżeli otwiera się pusta strona, upewnij się, że w zakładce `Console` nie ma
+błędów związanych z nieprawidłowymi ścieżkami do plików projektu CSS i JS
+(**404**). Najprawdopodobniej wprowadzona została nieprawidłowa wartość
+właściwości `homepage` lub skryptu `build` w pliku `package.json`.
 
-Якщо відкриється порожня сторінка, переконайся, що у вкладці `Console` немає
-помилок пов'язаних з неправильними шляхами до CSS та JS файлів проекту
-(**404**). Швидше за все у тебе неправильне значення прапора `--base` для
-команди `build` у файлі `package.json`.
-
-## Як це працює
+## Jak to działa
 
 ![How it works](./assets/how-it-works.png)
 
-1. Після кожного пуша у гілку `main` GitHub-репозиторію, запускається
-   спеціальний скрипт (GitHub Action) із файлу `.github/workflows/deploy.yml`.
-2. Усі файли репозиторію копіюються на сервер, де проект ініціалізується та
-   проходить лінтинг та збірку перед деплоєм.
-3. Якщо всі кроки пройшли успішно, зібрана продакшн версія файлів проекту
-   відправляється у гілку `gh-pages`. В іншому випадку, у лозі виконання скрипта
-   буде вказано в чому проблема.
+1. Po każdym pushu w gałęzi `main` repozytorium GitHub, włącza się specjalny
+   skrypt (GitHub Action) z pliku `.github/workflows/deploy.yml`.
+2. Wszystkie pliki repozytorium kopiują się na serwer, gdzie projekt
+   inicjalizuje się i buduje przed deploymentem.
+3. Jeżeli wszystkie kroki zakończyły się sukcesem, zbudowana wersja produkcyjna
+   plików projektu wysyła się w gałąź `gh-pages`. W przeciwnym razie, w logu
+   wykonania skryptu wskazane zostanie, w czym jest problem.

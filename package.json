@@ -1,24 +1,30 @@
 {
-  "name": "vanilla-app-template",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "auto-school",
+  "version": "2.0.0",
+  "description": "",
+  "homepage": "https://saniokkk.github.io/auto-school/",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build --base=/auto-school/",
-    "preview": "vite preview"
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /auto-school/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+  },
+  "keywords": [],
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+  },
+  "dependencies": {
+    "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
-    "glob": "^8.1.0",
-    "sass": "^1.67.0",
-    "vite": "^4.0.0",
-    "vite-plugin-imagemin": "^0.6.1"
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
   },
-  "license": "ISC",
-  "dependencies": {
-    "modern-normalize": "^1.1.0",
-    "postcss-nesting": "^12.0.1",
-    "vite-plugin-full-reload": "^1.0.5",
-    "vite-plugin-html-inject": "^1.0.1"
-  }
+  "browserslist": "> 0.5%, last 2 versions, not dead"
 }
