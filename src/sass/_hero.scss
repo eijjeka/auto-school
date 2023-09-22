@@ -1,13 +1,39 @@
 .hero {
-    padding: 150px 0;
+    padding: 80px 0;
 }
 
 .container {}
 
-.hero-container {}
+.hero-container {
+    @media screen and (min-width: 768px) {
+        // display: flex;
+        // justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1280px) {}
+}
+
+.hero-main-wrap {
+    margin-bottom: 130px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 150px;
+    }
+}
 
 .hero-left-side-wrap {
     margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 1280px) {}
 }
 
 .hero-title {
@@ -16,7 +42,7 @@
 
     @media screen and (min-width: 768px) {
         font-size: 34px;
-        max-width: 500px;
+        max-width: 420px;
         ;
     }
 
@@ -31,16 +57,32 @@
     color: var(--accent-color);
 }
 
-.hero-text {}
+.hero-text {
+
+    // font-size: 16px;
+    @media screen and (min-width: 768px) {
+        font-size: 20px;
+    }
+
+    @media screen and (min-width: 1280px) {}
+}
 
 .hero-text-sum {}
 
 .hero-text-bold {
     font-size: 16px;
     font-weight: 700;
+
+    @media screen and (min-width: 768px) {
+        font-size: 20px;
+    }
+
+    @media screen and (min-width: 1280px) {}
 }
 
 .hero-button {
+    display: block;
+    margin: 30px auto 0;
     min-height: 45px;
     background-color: var(--accent-color);
     color: #dedede;
@@ -52,59 +94,90 @@
     padding: 10px 35px;
     font-size: 16px;
     transition: color .25s linear, background-color .25s linear;
+
+    @media screen and (min-width: 768px) {
+        margin: 30px 0 0;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin: 116px 0 0;
+    }
 }
 
 .hero-right-side-wrap {
     position: relative;
-    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-.hero-number {
-    display: inline-block;
-    color: var(--accent-color);
-    font-size: 80px;
-    line-height: 1;
-    font-weight: 900;
+.hero-img-number {
+    width: 100px;
 
     @media screen and (min-width: 768px) {
-
-        font-size: 285px;
-        line-height: 1;
+        width: 165px;
     }
 
-
     @media screen and (min-width: 1280px) {
-        font-size: 500px;
+        width: 414px;
     }
 }
 
-.hero-bg-text {
+.hero-img-week {
+    width: 14px;
+
+    @media screen and (min-width: 768px) {
+        width: 24px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 56px;
+    }
+}
+
+.hero-img-car {
+    max-width: 310px;
     position: absolute;
-    color: var(--accent-color);
-    rotate: 270deg;
-    top: 30px;
-    left: 80px;
+    bottom: -95px;
 
     @media screen and (min-width: 768px) {
-        font-size: 32px;
-        top: 70px;
-        left: 300px;
+        max-width: 430px;
+        bottom: -26px;
+        right: -30px;
     }
 
     @media screen and (min-width: 1280px) {
-        font-size: 56px;
+        max-width: 920px;
+        bottom: -128px;
     }
 }
 
-.hero-image {
-    position: absolute;
-    top: 100px;
+.hero-descr-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10;
 
     @media screen and (min-width: 768px) {
-        top: 200px;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
     }
 
     @media screen and (min-width: 1280px) {
-        top: 400px;
+        justify-content: center;
+        gap: 50px;
     }
+}
+
+.hero-descr-item {
+    display: flex;
+    font-weight: 700;
+}
+
+.hero-descr-item::before {
+    content: url(../img/check.png);
+    display: block;
+    width: 20px;
+    // background-image: url(../img/check.png);
 }
