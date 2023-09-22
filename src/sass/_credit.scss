@@ -1,0 +1,55 @@
+.credit-section {
+  background: linear-gradient(
+      to top,
+      rgba(13, 13, 13, 1),
+      rgba(13, 13, 13, 0.85),
+      rgba(13, 13, 13, 0.85),
+      rgba(13, 13, 13, 1)
+    ),
+    url('../img/credit3.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.information-container {
+  text-align: center;
+}
+
+.wrapper-credit {
+  text-align: center;
+  @media screen and (min-width: 1280px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.pre-title-credit {
+  font-size: 16pt;
+  text-align: start;
+  color: var(--accent-color);
+  margin-bottom: 30px;
+}
+
+.credit-information {
+  @media screen and (min-width: 768px) {
+    width: 375px;
+    margin-left: auto;
+  }
+}
+
+.credit-information-title {
+  margin-bottom: 25px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.credit-information-pre {
+  margin-bottom: 25px;
+}
+
+.information-btn {
+  margin-top: 30px;
+  @media screen and (min-width: 768px) {
+    margin-top: 55px;
+  }
+}

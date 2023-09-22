@@ -13,8 +13,7 @@ body {
   color: var(--main-text-color);
 }
 
-
-.accent{
+.accent {
   color: var(--accent-color);
 }
 
@@ -40,9 +39,17 @@ body {
   }
 }
 
-section {
+.section {
   padding: 30px 0;
   overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 110px;
+  }
 }
 
 .section-title {
@@ -65,7 +72,7 @@ section {
 .description-list {
   font-size: 16px;
   list-style: none;
-  color: #dedede;
+  color: var(--main-text-color);
   text-align: start;
 }
 
@@ -83,7 +90,7 @@ section {
     width: 15px;
     height: 2px;
     transform: translateY(-50%);
-    background-color: #dedede;
+    background-color: var(--main-text-color);
   }
 
   @media screen and (min-width: 768px) {
@@ -94,8 +101,8 @@ section {
 .call-btn {
   padding: 10px 35px;
   font-size: 16px;
-  color: #dedede;
-  background-color: #c13131;
+  color: var(--main-text-color);
+  background-color: var(--accent-color);
   text-align: center;
   text-transform: uppercase;
   border: none;
@@ -106,7 +113,12 @@ section {
 
   &:hover,
   &:focus {
-    background-color: #dedede;
-    color: #0d0d0d;
+    background-color: var(--main-text-color);
+    color: var(--secondary-text-color);
   }
+}
+
+.accent-bold-text {
+  color: var(--accent-color);
+  font-weight: 700;
 }
