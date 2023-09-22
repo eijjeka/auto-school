@@ -2,11 +2,11 @@
   background: linear-gradient(
       to top,
       rgba(13, 13, 13, 1),
-      rgba(13, 13, 13, 0.9),
-      rgba(13, 13, 13, 0.9),
+      rgba(13, 13, 13, 0.6),
+      rgba(13, 13, 13, 0.6),
       rgba(13, 13, 13, 1)
     ),
-    url('https://images.pexels.com/photos/14823463/pexels-photo-14823463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    url('../img/practice.jpg');
   background-size: cover;
   background-position: center center;
 }
@@ -17,6 +17,7 @@
   @media screen and (min-width: 1280px) {
     display: flex;
     justify-content: space-between;
+    align-self: center;
   }
 }
 
@@ -30,6 +31,6 @@
   display: none;
   @media screen and (min-width: 1280px) {
     display: block;
-    width: 650px;
+    width: 613px;
   }
 }
