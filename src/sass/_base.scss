@@ -1,8 +1,8 @@
 :root {
-  --main-text-color: #262626;
-  --accent-color: #ff0624;
-  --main-text-color: #0d0d0d;
-  --main-text-color: #666666;
+  --main-text-color: #dedede;
+  --accent-color: #c13131;
+  --secondary-text-color: #0d0d0d;
+  --additional-text-color: #666666;
   --button-bg-color: #1db428;
 }
 
@@ -10,7 +10,11 @@ body {
   font-family: 'Proxima Nova Rg', sans-serif;
   font-size: 16px;
   background: #0d0d0d;
-  color: #dedede;
+  color: var(--main-text-color);
+}
+
+.accent {
+  color: var(--accent-color);
 }
 
 .container {
