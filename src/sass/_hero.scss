@@ -1,8 +1,23 @@
 .hero {
-    padding: 80px 0;
+    padding: 120px 0;
+    background-size: cover;
+    background-image: linear-gradient(to top,
+            rgba(13, 13, 13, 1),
+            rgba(13, 13, 13, 0.6) 30%,
+            rgba(13, 13, 13, 0.6) 70%,
+            rgba(13, 13, 13, 1) 100%),
+        url(../img/hero-road-3.jpg);
+
+    @media screen and (min-width: 768px) {
+        // display: flex;
+        // justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding: 100px 0;
+    }
 }
 
-.container {}
 
 .hero-container {
     @media screen and (min-width: 768px) {
@@ -19,10 +34,11 @@
     @media screen and (min-width: 768px) {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 80px;
     }
 
     @media screen and (min-width: 1280px) {
-        margin-bottom: 150px;
+        margin-bottom: 160px;
     }
 }
 
@@ -33,7 +49,9 @@
         margin-bottom: 0;
     }
 
-    @media screen and (min-width: 1280px) {}
+    @media screen and (min-width: 1280px) {
+        padding-top: 160px;
+    }
 }
 
 .hero-title {
@@ -48,7 +66,7 @@
 
     @media screen and (min-width: 1280px) {
         font-size: 60px;
-        max-width: 100%;
+        max-width: 955px;
         ;
     }
 }
