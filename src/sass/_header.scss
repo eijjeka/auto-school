@@ -8,7 +8,6 @@
   z-index: 2;
 }
 
-.container {}
 
 .header-container {
   display: flex;
@@ -48,12 +47,16 @@
   gap: 10px;
 }
 
-.header-tel {
+.header-tel, .footer-tel {
   font-style: 18px;
   font-weight: 900;
 }
 
-.header-location {
+.header-location, .footer-location {
   font-style: 14px;
   color: var(--additional-text-color);
+}
+
+.logo {
+  width: 150px;
 }
