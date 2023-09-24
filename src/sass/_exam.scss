@@ -1,3 +1,16 @@
+.exam-section {
+  background: linear-gradient(
+      to top,
+      rgba(13, 13, 13, 1),
+      rgba(13, 13, 13, 0.6),
+      rgba(13, 13, 13, 0.6),
+      rgba(13, 13, 13, 1)
+    ),
+    url('../img/avtoshkola.avif');
+  background-size: cover;
+  background-position: center;
+}
+
 .wrapper-exam {
   text-align: center;
 }
@@ -23,7 +36,11 @@
   padding-top: 50px;
   font-size: 20px;
   line-height: 1.42;
+
   @media screen and (min-width: 1280px) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 }
 
@@ -31,60 +48,71 @@
   height: 400px;
   position: relative;
   text-align: center;
-  background: linear-gradient(
-      to top,
-      rgba(13, 13, 13, 1),
-      rgba(13, 13, 13, 0.6),
-      rgba(13, 13, 13, 0.6),
-      rgba(13, 13, 13, 1)
-    ),
-    url('../img/success_bg.jpg');
-  background-size: cover;
-  background-position: center center;
+  font-size: 28px;
 
   @media screen and (min-width: 768px) {
-    height: 300px;
+    height: 450px;
+    // padding-top: 70px;
     display: flex;
     align-items: center;
     flex-direction: column;
   }
 }
 
-.car-img-left {
-  position: absolute;
-  width: 320px;
-  bottom: 20px;
-  left: -150px;
+.info-accent-exam {
+  font-size: 36px;
 
   @media screen and (min-width: 768px) {
-    width: 384px;
-    top: 108px;
-    left: -140px;
+    font-size: 38px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 52px;
+  }
+}
+
+.enter-text {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.car-img-left {
+  position: absolute;
+  width: 280px;
+  bottom: 25px;
+  left: -111px;
+
+  @media screen and (min-width: 768px) {
+    width: 500px;
+    bottom: 0;
+    left: -100px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 500px;
-    top: 23px;
-    left: -160px;
+    bottom: -5px;
+    left: -90px;
   }
 }
 
 .car-img-right {
-  width: 320px;
+  width: 260px;
   position: absolute;
-  bottom: 15px;
-  right: -150px;
+  bottom: 28px;
+  right: -100px;
 
   @media screen and (min-width: 768px) {
-    width: 400px;
-    top: 110px;
-    right: -160px;
+    width: 500px;
+    bottom: 0;
+    right: -120px;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 500px;
-    top: 20px;
-    right: -160px;
+    width: 498px;
+    bottom: 2px;
+    right: -100px;
   }
 }
 

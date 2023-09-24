@@ -1,183 +1,194 @@
 .hero {
-    padding: 80px 0;
+  padding: 80px 0;
+  background: linear-gradient(
+      to top,
+      rgba(13, 13, 13, 1),
+      rgba(13, 13, 13, 0.6),
+      rgba(13, 13, 13, 0.6),
+      rgba(13, 13, 13, 1)
+    ),
+    url('../img/mountains.avif');
+  background-size: cover;
+  background-position: center;
 }
 
-.container {}
-
 .hero-container {
-    @media screen and (min-width: 768px) {
-        // display: flex;
-        // justify-content: space-between;
-    }
+  @media screen and (min-width: 768px) {
+    // display: flex;
+    // justify-content: space-between;
+  }
 
-    @media screen and (min-width: 1280px) {}
+  @media screen and (min-width: 1280px) {
+  }
 }
 
 .hero-main-wrap {
-    margin-bottom: 130px;
+  margin-bottom: 130px;
 
-    @media screen and (min-width: 768px) {
-        display: flex;
-        justify-content: space-between;
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
 
-    @media screen and (min-width: 1280px) {
-        margin-bottom: 150px;
-    }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 150px;
+  }
 }
 
 .hero-left-side-wrap {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 
-    @media screen and (min-width: 768px) {
-        margin-bottom: 0;
-    }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 
-    @media screen and (min-width: 1280px) {}
+  @media screen and (min-width: 1280px) {
+  }
 }
 
 .hero-title {
-    font-size: 22px;
-    line-height: calc(26 / 22);
+  font-size: 22px;
+  line-height: calc(26 / 22);
 
-    @media screen and (min-width: 768px) {
-        font-size: 34px;
-        max-width: 420px;
-        ;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    max-width: 420px;
+  }
 
-    @media screen and (min-width: 1280px) {
-        font-size: 60px;
-        max-width: 100%;
-        ;
-    }
+  @media screen and (min-width: 1280px) {
+    font-size: 60px;
+    max-width: 100%;
+  }
 }
 
 .hero-title-accent {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .hero-text {
+  // font-size: 16px;
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
 
-    // font-size: 16px;
-    @media screen and (min-width: 768px) {
-        font-size: 20px;
-    }
-
-    @media screen and (min-width: 1280px) {}
+  @media screen and (min-width: 1280px) {
+  }
 }
 
-.hero-text-sum {}
+.hero-text-sum {
+}
 
 .hero-text-bold {
-    font-size: 16px;
-    font-weight: 700;
+  font-size: 16px;
+  font-weight: 700;
 
-    @media screen and (min-width: 768px) {
-        font-size: 20px;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
 
-    @media screen and (min-width: 1280px) {}
+  @media screen and (min-width: 1280px) {
+  }
 }
 
 .hero-button {
-    display: block;
-    margin: 30px auto 0;
-    min-height: 45px;
-    background-color: var(--accent-color);
-    color: #dedede;
-    text-align: center;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    padding: 10px 35px;
-    font-size: 16px;
-    transition: color .25s linear, background-color .25s linear;
+  display: block;
+  margin: 30px auto 0;
+  min-height: 45px;
+  background-color: var(--accent-color);
+  color: #dedede;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px 35px;
+  font-size: 16px;
+  transition: color 0.25s linear, background-color 0.25s linear;
 
-    @media screen and (min-width: 768px) {
-        margin: 30px 0 0;
-    }
+  @media screen and (min-width: 768px) {
+    margin: 30px 0 0;
+  }
 
-    @media screen and (min-width: 1280px) {
-        margin: 116px 0 0;
-    }
+  @media screen and (min-width: 1280px) {
+    margin: 116px 0 0;
+  }
 }
 
 .hero-right-side-wrap {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .hero-img-number {
-    width: 100px;
+  width: 100px;
 
-    @media screen and (min-width: 768px) {
-        width: 165px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 165px;
+  }
 
-    @media screen and (min-width: 1280px) {
-        width: 414px;
-    }
+  @media screen and (min-width: 1280px) {
+    width: 414px;
+  }
 }
 
 .hero-img-week {
-    width: 14px;
+  width: 14px;
 
-    @media screen and (min-width: 768px) {
-        width: 24px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 24px;
+  }
 
-    @media screen and (min-width: 1280px) {
-        width: 56px;
-    }
+  @media screen and (min-width: 1280px) {
+    width: 56px;
+  }
 }
 
 .hero-img-car {
-    max-width: 310px;
-    position: absolute;
-    bottom: -95px;
+  width: 320px;
+  position: absolute;
+  top: 57px;
 
-    @media screen and (min-width: 768px) {
-        max-width: 430px;
-        bottom: -26px;
-        right: -30px;
-    }
+  @media screen and (min-width: 768px) {
+    min-width: 450px;
+    top: 120px;
+    right: -40px;
+  }
 
-    @media screen and (min-width: 1280px) {
-        max-width: 920px;
-        bottom: -128px;
-    }
+  @media screen and (min-width: 1280px) {
+    min-width: 760px;
+    bottom: -237px;
+  }
 }
 
 .hero-descr-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; //ось це я додав
+  gap: 10;
 
-    @media screen and (min-width: 768px) {
-        flex-direction: row;
-        justify-content: center;
-        gap: 30px;
-    }
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
 
-    @media screen and (min-width: 1280px) {
-        justify-content: center;
-        gap: 50px;
-    }
+  @media screen and (min-width: 1280px) {
+    justify-content: center;
+    gap: 50px;
+  }
 }
 
 .hero-descr-item {
-    display: flex;
-    font-weight: 700;
+  display: flex;
+  font-weight: 700;
 }
 
 .hero-descr-item::before {
-    content: url(../img/check.png);
-    display: block;
-    width: 20px;
-    // background-image: url(../img/check.png);
+  content: url(../img/check.png);
+  display: block;
+  width: 20px;
+  // background-image: url(../img/check.png);
 }
