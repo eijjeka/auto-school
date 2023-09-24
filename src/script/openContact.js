@@ -6,11 +6,13 @@ const refs = {
   imgPhone: document.getElementById('img-phone'),
 };
 
+let intervalShake;
+
 const handleButtonMap = e => {
   const active = refs.aboutContainer
     .getAttribute('class')
     .includes('about-active');
-  console.log(active);
+  open = true;
   e.currentTarget === refs.buttonMap && active === true
     ? (refs.aboutContainer.setAttribute('class', 'about'),
       refs.innerContainer.setAttribute('class', 'about-inner-container'))
@@ -21,23 +23,34 @@ const handleButtonMap = e => {
       ));
 };
 
+const mouseEnterModalContact = () => {
+  clearInterval(intervalShake);
+};
+
 const mouseEnterMap = () => {
   const active = refs.aboutContainer
     .getAttribute('class')
     .includes('about-active');
 
   if (!active) {
-    refs.imgPhone.animate(
-      [{ transform: 'rotate(15deg)' }, { transform: 'rotate(0deg)' }],
-      {
-        duration: 120,
-        iterations: 4,
-      }
-    );
+    intervalShake = setInterval(() => {
+      shakePhone(refs.imgPhone);
+    }, 3000);
   } else {
-    return;
+    clearInterval(intervalShake);
   }
+};
+
+const shakePhone = element => {
+  element.animate(
+    [{ transform: 'rotate(15deg)' }, { transform: 'rotate(0deg)' }],
+    {
+      duration: 120,
+      iterations: 4,
+    }
+  );
 };
 
 refs.buttonMap.addEventListener('click', handleButtonMap);
 refs.map.addEventListener('mouseenter', mouseEnterMap);
+refs.aboutContainer.addEventListener('mouseenter', mouseEnterModalContact);
