@@ -3,11 +3,15 @@
   top: 0;
   left: 0;
   right: 0;
+  height: 80px;
   padding: 12px 0;
-  background-color: rgba(0, 0, 0, 0.9);
   z-index: 2;
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.header-bg {
+  background-color: rgba(0, 0, 0, .9);
+}
 
 .header-container {
   display: flex;
@@ -30,9 +34,7 @@
   }
 }
 
-.order-item {
-
-}
+.order-item {}
 
 .order-btn {
   border: none;
@@ -47,12 +49,14 @@
   gap: 10px;
 }
 
-.header-tel, .footer-tel {
+.header-tel,
+.footer-tel {
   font-style: 18px;
   font-weight: 900;
 }
 
-.header-location, .footer-location {
+.header-location,
+.footer-location {
   font-style: 14px;
   color: var(--additional-text-color);
 }
