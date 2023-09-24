@@ -6,7 +6,7 @@
       rgba(13, 13, 13, 0.6),
       rgba(13, 13, 13, 1)
     ),
-    url('../img/avtoshkola.avif');
+    url('../img/avtoshkola.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -51,7 +51,6 @@
   font-size: 28px;
 
   @media screen and (min-width: 768px) {
-    height: 337px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -110,7 +109,7 @@
 
   @media screen and (min-width: 1280px) {
     width: 498px;
-    bottom: 2px;
+    bottom: -22px;
     right: -100px;
   }
 }

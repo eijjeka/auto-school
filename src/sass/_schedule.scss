@@ -6,7 +6,7 @@
       rgba(13, 13, 13, 0.6),
       rgba(13, 13, 13, 1)
     ),
-    url('../img/class.avif');
+    url('../img/class.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -98,5 +98,5 @@
   font-size: 20px;
   padding: 8px;
   color: var(--main-text-color);
-  background: var(--secondary-text-color);
+  background-color: var(--main-bg-color);
 }
