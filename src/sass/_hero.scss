@@ -10,6 +10,15 @@
     url('../img/mountains.avif');
   background-size: cover;
   background-position: center;
+
+  @media screen and (min-width: 768px) {
+    // display: flex;
+    // justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 100px 0;
+  }
 }
 
 .hero-container {
@@ -28,10 +37,11 @@
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 80px;
   }
 
   @media screen and (min-width: 1280px) {
-    margin-bottom: 150px;
+    margin-bottom: 160px;
   }
 }
 
@@ -43,6 +53,7 @@
   }
 
   @media screen and (min-width: 1280px) {
+    padding-top: 160px;
   }
 }
 
@@ -57,7 +68,7 @@
 
   @media screen and (min-width: 1280px) {
     font-size: 60px;
-    max-width: 100%;
+    max-width: 955px;
   }
 }
 
