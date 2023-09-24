@@ -1,22 +1,14 @@
 {
   "name": "auto-school",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "",
   "homepage": "https://saniokkk.github.io/auto-school/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /auto-school/"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
-  },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
-  },
   "dependencies": {
     "aos": "^2.3.4",
     "modern-normalize": "^1.1.0"
