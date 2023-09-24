@@ -2,6 +2,8 @@ const refs = {
   buttonMap: document.getElementById('btn-phone'),
   aboutContainer: document.getElementById('about'),
   innerContainer: document.getElementById('inner'),
+  map: document.getElementById('map'),
+  imgPhone: document.getElementById('img-phone'),
 };
 
 const handleButtonMap = e => {
@@ -19,4 +21,23 @@ const handleButtonMap = e => {
       ));
 };
 
+const mouseEnterMap = () => {
+  const active = refs.aboutContainer
+    .getAttribute('class')
+    .includes('about-active');
+
+  if (!active) {
+    refs.imgPhone.animate(
+      [{ transform: 'rotate(15deg)' }, { transform: 'rotate(0deg)' }],
+      {
+        duration: 120,
+        iterations: 4,
+      }
+    );
+  } else {
+    return;
+  }
+};
+
 refs.buttonMap.addEventListener('click', handleButtonMap);
+refs.map.addEventListener('mouseenter', mouseEnterMap);
