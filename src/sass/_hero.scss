@@ -1,19 +1,16 @@
 .hero {
-  padding: 80px 0;
-  background: linear-gradient(
-      to top,
+  padding: 110px 0 80px;
+  background: linear-gradient(to top,
       rgba(13, 13, 13, 1),
       rgba(13, 13, 13, 0.6),
       rgba(13, 13, 13, 0.6),
-      rgba(13, 13, 13, 1)
-    ),
+      rgba(13, 13, 13, 1)),
     url('../img/mountains.jpg');
   background-size: cover;
   background-position: center;
 
   @media screen and (min-width: 768px) {
-    // display: flex;
-    // justify-content: space-between;
+    padding: 130px 0 0;
   }
 
   @media screen and (min-width: 1280px) {
@@ -27,8 +24,7 @@
     // justify-content: space-between;
   }
 
-  @media screen and (min-width: 1280px) {
-  }
+  @media screen and (min-width: 1280px) {}
 }
 
 .hero-main-wrap {
@@ -77,17 +73,16 @@
 }
 
 .hero-text {
+
   // font-size: 16px;
   @media screen and (min-width: 768px) {
     font-size: 20px;
   }
 
-  @media screen and (min-width: 1280px) {
-  }
+  @media screen and (min-width: 1280px) {}
 }
 
-.hero-text-sum {
-}
+.hero-text-sum {}
 
 .hero-text-bold {
   font-size: 16px;
@@ -97,8 +92,7 @@
     font-size: 20px;
   }
 
-  @media screen and (min-width: 1280px) {
-  }
+  @media screen and (min-width: 1280px) {}
 }
 
 .hero-button {
@@ -202,4 +196,58 @@
   display: block;
   width: 20px;
   // background-image: url(../img/check.png);
+}
+
+.btn-to-top {
+  width: 32px;
+  height: 32px;
+  position: fixed;
+  z-index: 5;
+  right: 20px;
+  bottom: 20px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition-property: opacity, visibility;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    width: 44px;
+    height: 44px;
+  }
+
+  @media screen and (min-width: 1280px) {}
+
+  &:hover,
+  &:focus {
+    background-color: #fff;
+  }
+
+  &:hover .hero__row-svg,
+  &:focus .hero__row-svg,
+  &:active .hero__row-svg {
+    fill: var(--accent-color);
+  }
+}
+
+.btn-to-top.showBtn {
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+}
+
+.hero__row-svg {
+  width: 100%;
+  height: 100%;
+  fill: #fff;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

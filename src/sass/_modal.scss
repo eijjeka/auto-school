@@ -50,11 +50,11 @@
 .modal__title {
   font-size: 22px;
   text-align: center;
-  background-color: #fb6f58;
   padding: 8px;
   width: 100%;
   border-radius: 10px;
   margin-bottom: 50px;
+  border: 1px solid;
 }
 
 .modal__text {
@@ -84,8 +84,8 @@
   width: 100%;
 }
 
-.input-wrap + .input-wrap {
-  margin-top: 30px;
+.input-wrap {
+  margin-bottom: 30px;
 }
 
 .modal-label {
@@ -117,8 +117,17 @@
 
 .input-tel {}
 
+.modal-submit-btn.call-btn {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-color: transparent;
+  outline: none;
+  margin: 0;
+}
+
 .close-modal-btn:hover {
-  transform: rotate(360deg);
+  transform: rotate(180deg);
 }
 
 .close-modal-btn::before {
