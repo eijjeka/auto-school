@@ -2,6 +2,7 @@
   --main-text-color: #dedede;
   --secondary-text-color: rgb(13, 13, 13);
   --accent-color: #c13131;
+  // --accent-color: #fb1b14;
   --main-bg-color: rgb(13, 13, 13);
   --additional-text-color: #666666;
   --button-bg-color: #1db428;
@@ -46,10 +47,12 @@ body {
 
   @media screen and (min-width: 768px) {
     margin-top: 60px;
+    padding: 30px 0;
   }
 
   @media screen and (min-width: 1280px) {
     margin-top: 110px;
+    padding: 50px 0;
   }
 }
 
