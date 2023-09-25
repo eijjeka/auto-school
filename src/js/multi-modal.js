@@ -3,6 +3,7 @@ document.addEventListener(
     function () {
       const modals = [
         "data-order-modal",
+        "data-success-modal",
       ];
 
       modals.forEach((element) => {
