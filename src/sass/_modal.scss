@@ -105,17 +105,11 @@
   outline: none;
 }
 
-.modal-input:focus + .modal-label {
+
+.modal-input:focus ~ .modal-label,
+.modal-input:not(:placeholder-shown):valid ~ .modal-label {
   transform: translateY(-44px) scale(0.9);
 }
-
-.label-name {}
-
-.input-name {}
-
-.label-tel {}
-
-.input-tel {}
 
 .modal-submit-btn.call-btn {
   display: block;
