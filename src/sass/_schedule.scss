@@ -8,7 +8,7 @@
     ),
     url('../img/class.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center center;
 }
 
 .pre-title-schedule {
@@ -55,7 +55,6 @@
 
   justify-self: center;
   border-radius: 20px;
-  border: 1px solid #000;
   display: flex;
   justify-content: center;
   opacity: 0.8;
@@ -82,7 +81,6 @@
   border-radius: 20px;
   margin-bottom: auto;
   text-align: center;
-  transform: rotate(3deg);
 }
 
 .day-list {
