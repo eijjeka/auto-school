@@ -107,7 +107,7 @@
 
 
 .modal-input:focus ~ .modal-label,
-.modal-input:not(:placeholder-shown):valid ~ .modal-label {
+.modal-input:not(:placeholder-shown) ~ .modal-label {
   transform: translateY(-44px) scale(0.9);
 }
 

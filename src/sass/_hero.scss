@@ -55,6 +55,7 @@
 
 .hero-title {
   font-size: 22px;
+  font-weight: 700;
   line-height: calc(26 / 22);
 
   @media screen and (min-width: 768px) {
@@ -146,7 +147,9 @@
   }
 
   @media screen and (min-width: 1280px) {
-    font-size: 500px;
+    font-size: 400px;
+    font-size: 900;
+    color: var(--accent-color);
   }
 }
 
