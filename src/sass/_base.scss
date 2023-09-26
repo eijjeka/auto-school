@@ -103,7 +103,7 @@ body {
   &::before {
     content: '📌';
     position: absolute;
-    left: 0;
+    left: -5px;
     top: 9px;
     transform: translateY(-50%);
   }
