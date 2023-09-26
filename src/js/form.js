@@ -23,7 +23,7 @@ async function formSend(e) {
   });
   if (response.ok) {
     let result = await response.json();
-    // alert(result.message);
+    alert(result.message);
     form.reset();
   }
 
