@@ -1,8 +1,8 @@
-'use strict';
-
+import Notiflix from 'notiflix';
+import toggleModal from './multi-modal';
+console.log(toggleModal);
 const form = document.querySelector('#form');
 form.addEventListener('submit', formSend);
-
 async function formSend(e) {
   console.log(e);
   e.preventDefault();
@@ -11,7 +11,8 @@ async function formSend(e) {
   console.log('error: ', error);
 
   if(error) {
-    alert(error);
+    Notiflix.Notify.failure(error);
+    toggleModal();
     return
   }
 
@@ -23,7 +24,8 @@ async function formSend(e) {
   });
   if (response.ok) {
     let result = await response.json();
-    alert(result.message);
+    toggleModal(e);
+    Notiflix.Notify.success(result.message);
     form.reset();
   }
 
