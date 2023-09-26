@@ -36,10 +36,14 @@ document.addEventListener(
         e.preventDefault();
         const call = e.target.dataset.title;
         const title = document.querySelector('.modal__title');
-        const orderBtn = document.querySelector('.modal-submit-btn')
+        const orderBtn = document.querySelector('.modal-submit-btn');
 
-        title.textContent = call ? 'Замовити дзвінок' : 'ЗАПИСАТИСЬ НА НАВЧАННЯ';
-        call ? orderBtn.classList.add('modal-submit-btn-call') : orderBtn.classList.remove('modal-submit-btn-call')
+        title.textContent = call
+          ? 'Замовити дзвінок'
+          : 'ЗАПИСАТИСЬ НА НАВЧАННЯ';
+        call
+          ? orderBtn.classList.add('modal-submit-btn-call')
+          : orderBtn.classList.remove('modal-submit-btn-call');
 
         document.body.classList.toggle('modal-open');
         modal.classList.toggle('is-hidden');

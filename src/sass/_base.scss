@@ -101,14 +101,11 @@ body {
   font-size: 16px;
 
   &::before {
-    content: '';
+    content: '📌';
     position: absolute;
     left: 0;
     top: 9px;
-    width: 15px;
-    height: 2px;
     transform: translateY(-50%);
-    background-color: var(--main-text-color);
   }
 
   @media screen and (min-width: 768px) {
