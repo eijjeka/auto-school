@@ -7,6 +7,7 @@ async function formSend(e) {
   e.preventDefault();
 
   const error = formValidate(e.currentTarget);
+  console.log('error: ', error);
 
   if(error) {
     alert(error);
@@ -21,7 +22,7 @@ async function formSend(e) {
   });
   if (response.ok) {
     let result = await response.json();
-    alert(result.message);
+    // alert(result.message);
     form.reset();
   }
 

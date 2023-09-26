@@ -1,7 +1,7 @@
-<div class="backdrop is-hidden" data-order-modal>
+<div class="backdrop is-hidden" data-modal-order>
   <div class="modal">
-    <form id="form" action="send_mail.php" name="form" method="POST">
-      <button type="button" class="close-modal-btn" data-order-modal-close></button>
+    <form class="form" id="form" action="send_mail.php" name="form" method="POST">
+      <button type="button" class="close-modal-btn" data-modal-order-close></button>
       <h2 class="modal__title">ЗАПИСАТИСЬ НА НАВЧАННЯ</h2>
       <div class="input-wrap">
         <input
@@ -23,7 +23,7 @@
         />
         <label class="label-tel modal-label" for="tel">Телефон</label>
       </div>
-      <button class="modal-submit-btn call-btn">Надіслати заявку</button>
+      <button type="button" class="modal-submit-btn call-btn" data-modal-order-close data-modal-success-open>Надіслати заявку</button>
     </form>
   </div>
 </div>
