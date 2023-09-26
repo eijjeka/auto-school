@@ -1,7 +1,0 @@
-#The site is developed by developers
-https://www.linkedin.com/in/jekaignat/ and https://www.linkedin.com/in/kashirin-aleksandr-244b49237/
-For development issues, please refer to the links above. Have a nice day everyone and good luck.
-
-Sitemap: https://www.avtoshkoladriver.com.ua/sitemap.xml
-User-agent: *
-Allow: 

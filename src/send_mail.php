@@ -17,7 +17,8 @@ $body = file_get_contents($email_template); // Сохраняем данные �
 $body = str_replace('%name%', $name, $body); // Заменяем строку %name% на имя
 $body = str_replace('%phone%', $phone, $body); // строку %phone% на телефон
 
-$mail->addAddress("avtoshkoladriver.tet@gmail.com"); /* Здесь введите Email, куда отправлять */
+$mail->addAddress("kashirin.alexsandr91@gmail.com"); /* Здесь введите Email, куда отправлять */
+// $mail->addAddress("avtoshkoladriver.tet@gmail.com"); /* Здесь введите Email, куда отправлять */
 // $mail->setFrom($email);
 $mail->Subject = "[Заявка с форми]"; /* Тема письма */
 $mail->MsgHTML($body);

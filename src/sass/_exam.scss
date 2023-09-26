@@ -6,7 +6,7 @@
       rgba(13, 13, 13, 0.8),
       rgba(13, 13, 13, 1)
     ),
-    url('../img/avtoshkola.jpg');
+    url('../img/avtoshkola.webp');
   background-size: cover;
   background-position: center;
 
@@ -32,7 +32,7 @@
 
 .info-accent {
   font-weight: 700;
-  color: #c13131;
+  color: var(--accent-color);
 }
 
 .additional-text-exam {
