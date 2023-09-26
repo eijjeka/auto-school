@@ -1,6 +1,4 @@
-document.addEventListener(
-  'DOMContentLoaded',
-  function () {
+
     const modals = ['data-modal-order'];
 
     modals.forEach(element => {
@@ -33,7 +31,6 @@ document.addEventListener(
       );
 
       function toggleModal(e) {
-        e.preventDefault();
         const call = e.target.dataset.title;
         const title = document.querySelector('.modal__title');
         const orderBtn = document.querySelector('.modal-submit-btn')
@@ -45,11 +42,10 @@ document.addEventListener(
         modal.classList.toggle('is-hidden');
       }
     });
-  },
-  false
-);
 
-function logModalError(text) {
+
+
+ function logModalError(text) {
   const styles = 'color: #bada55';
   console.log('%c' + text, styles);
 }
