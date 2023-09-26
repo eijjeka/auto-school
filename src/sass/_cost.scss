@@ -16,7 +16,7 @@
     margin-left: -94px;
     font-size: 45px;
     font-weight: bold;
-    color: #c13131;
+    color: var(--accent-color);
     transform: rotate(270deg);
   }
 }
@@ -40,5 +40,5 @@
 
 .cost-text {
   font-weight: 700;
-  color: #c13131;
+  color: var(--accent-color);
 }
