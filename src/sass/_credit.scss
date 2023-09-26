@@ -32,7 +32,7 @@
   margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
-    width: 100%;
+    width: 300px;
     height: 100px;
     text-align: center;
     margin-top: 80px;
@@ -44,13 +44,13 @@
   }
 
   @media screen and (min-width: 1280px) {
+    width: 341px;
+    height: 200px;
+    text-align: center;
     margin-top: 30px;
     margin-left: -94px;
-    width: 400px;
-    height: 200px;
-    font-weight: bold;
-    text-align: center;
     font-size: 32px;
+    font-weight: bold;
     transform: rotate(-90deg);
   }
 }
@@ -59,7 +59,12 @@
   @media screen and (min-width: 768px) {
     width: 700px;
     margin-top: 50px;
-    margin-right: 190px;
+    margin-right: 170px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 0;
+    margin-left: 22px;
   }
 }
 

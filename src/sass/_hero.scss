@@ -1,10 +1,12 @@
 .hero {
   padding: 110px 0 80px;
-  background: linear-gradient(to top,
+  background: linear-gradient(
+      to top,
       rgba(13, 13, 13, 1),
       rgba(13, 13, 13, 0.6),
       rgba(13, 13, 13, 0.6),
-      rgba(13, 13, 13, 1)),
+      rgba(13, 13, 13, 1)
+    ),
     url('../img/mountains.jpg');
   background-size: cover;
   background-position: center;
@@ -15,6 +17,7 @@
 
   @media screen and (min-width: 1280px) {
     padding: 90px 0;
+    background-position: top;
   }
 }
 
@@ -24,7 +27,8 @@
     // justify-content: space-between;
   }
 
-  @media screen and (min-width: 1280px) {}
+  @media screen and (min-width: 1280px) {
+  }
 }
 
 .hero-main-wrap {
@@ -74,16 +78,14 @@
 }
 
 .hero-text {
-
   // font-size: 16px;
   @media screen and (min-width: 768px) {
     font-size: 20px;
   }
 
-  @media screen and (min-width: 1280px) {}
+  @media screen and (min-width: 1280px) {
+  }
 }
-
-.hero-text-sum {}
 
 .hero-text-bold {
   font-size: 16px;
@@ -93,7 +95,8 @@
     font-size: 20px;
   }
 
-  @media screen and (min-width: 1280px) {}
+  @media screen and (min-width: 1280px) {
+  }
 }
 
 .hero-button {
@@ -135,7 +138,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    width: 414px;
+    width: 300px;
   }
 }
 
@@ -168,7 +171,7 @@
 .hero-img-car {
   width: 320px;
   position: absolute;
-  top: 57px;
+  top: 100px;
 
   @media screen and (min-width: 768px) {
     min-width: 450px;
@@ -238,7 +241,8 @@
     height: 44px;
   }
 
-  @media screen and (min-width: 1280px) {}
+  @media screen and (min-width: 1280px) {
+  }
 
   &:hover,
   &:focus {
