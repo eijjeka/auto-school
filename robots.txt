@@ -1,0 +1,3 @@
+Sitemap: https://www.avtoshkoladriver.com.ua/sitemap.xml
+User-agent: *
+Allow:

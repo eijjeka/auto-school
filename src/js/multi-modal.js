@@ -24,25 +24,25 @@
         return;
 
       openModalBtns.forEach(openBtn =>
-        openBtn.addEventListener('click', toggleModal)
+        openBtn.addEventListener('click', (e)=> toggleModal(e, modal))
       );
       closeModalBtns.forEach(closeBtn =>
-        closeBtn.addEventListener('click', toggleModal)
+        closeBtn.addEventListener('click', (e)=> toggleModal(e, modal))
       );
 
-      function toggleModal(e) {
-        const call = e.target.dataset.title;
-        const title = document.querySelector('.modal__title');
-        const orderBtn = document.querySelector('.modal-submit-btn')
-
-        title.textContent = call ? 'Замовити дзвінок' : 'ЗАПИСАТИСЬ НА НАВЧАННЯ';
-        call ? orderBtn.classList.add('modal-submit-btn-call') : orderBtn.classList.remove('modal-submit-btn-call')
-
-        document.body.classList.toggle('modal-open');
-        modal.classList.toggle('is-hidden');
-      }
     });
 
+    export default function toggleModal(event, modal) {
+      const dataAtr = event?.target?.dataset?.title;
+      const title = document.querySelector('.modal__title');
+      const orderBtn = document.querySelector('.modal-submit-btn')
+
+      title.textContent = dataAtr ? 'Замовити дзвінок' : 'ЗАПИСАТИСЬ НА НАВЧАННЯ';
+      dataAtr ? orderBtn.classList.add('modal-submit-btn-call') : orderBtn.classList.remove('modal-submit-btn-call')
+
+      document.body.classList.toggle('modal-open');
+      modal.classList.toggle('is-hidden');
+    }
 
 
  function logModalError(text) {

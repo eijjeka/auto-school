@@ -1,6 +1,8 @@
 import Notiflix from 'notiflix';
 import toggleModal from './multi-modal';
-console.log(toggleModal);
+
+const modal = document.querySelector('[data-modal-order]');
+
 const form = document.querySelector('#form');
 form.addEventListener('submit', formSend);
 async function formSend(e) {
@@ -12,19 +14,18 @@ async function formSend(e) {
 
   if(error) {
     Notiflix.Notify.failure(error);
-    toggleModal();
     return
   }
 
   let formData = new FormData(form);
-  console.log(formData);
   let response = await fetch('send_mail.php', {
     method: 'POST',
     body: formData,
   });
+
   if (response.ok) {
     let result = await response.json();
-    toggleModal(e);
+    toggleModal(e, modal);
     Notiflix.Notify.success(result.message);
     form.reset();
   }
