@@ -1,7 +1,7 @@
 document.addEventListener(
   'DOMContentLoaded',
   function () {
-    const modals = ['data-modal-order', 'data-modal-success'];
+    const modals = ['data-modal-order'];
 
     modals.forEach(element => {
       const openModalSelector = element + '-open';

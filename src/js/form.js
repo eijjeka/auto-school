@@ -4,6 +4,7 @@ const form = document.querySelector('#form');
 form.addEventListener('submit', formSend);
 
 async function formSend(e) {
+  console.log(e);
   e.preventDefault();
 
   const error = formValidate(e.currentTarget);
