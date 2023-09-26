@@ -96,6 +96,7 @@
   }
 
   @media screen and (min-width: 1280px) {
+    font-size: 30px;
   }
 }
 
@@ -196,6 +197,7 @@
     flex-direction: row;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
   }
 
   @media screen and (min-width: 1280px) {
@@ -210,7 +212,8 @@
 }
 
 .hero-descr-item::before {
-  content: url(../img/check.png);
+  // content: url(../img/check.png);
+  content: '✅';
   display: block;
   width: 20px;
   // background-image: url(../img/check.png);

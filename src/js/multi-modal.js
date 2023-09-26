@@ -30,8 +30,6 @@
         closeBtn.addEventListener('click', (e)=> toggleModal(e, modal))
       );
 
-    });
-
     export default function toggleModal(event, modal) {
       const dataAtr = event?.target?.dataset?.title;
       const title = document.querySelector('.modal__title');
