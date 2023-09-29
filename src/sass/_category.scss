@@ -1,0 +1,62 @@
+.category-section {
+  height: 500px;
+  background: linear-gradient(
+      to top,
+      rgba(13, 13, 13, 1),
+      rgba(13, 13, 13, 0.8),
+      rgba(13, 13, 13, 0.8),
+      rgba(13, 13, 13, 0.9),
+      rgba(13, 13, 13, 1)
+    ),
+    url('../img/fist.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.wrapper-category {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 80px;
+  }
+}
+
+.inner-category {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.category-title {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.category-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.category-tem {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.category-text {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.18182;
+  color: var(--accent-color);
+}
