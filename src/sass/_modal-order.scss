@@ -11,7 +11,6 @@
   opacity: 1;
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .is-hidden {
@@ -33,7 +32,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(45deg, rgba(116, 115, 131, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%, rgba(0, 212, 255, 0.8) 100%), url(../img/logo.png);
+  background: linear-gradient(
+    45deg,
+    rgba(116, 115, 131, 0.8) 0%,
+    rgba(255, 255, 255, 0.8) 100%,
+    rgba(0, 212, 255, 0.8) 100%
+  );
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
   border: 2px solid rgb(0, 0, 0);
@@ -41,7 +45,7 @@
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
   .is-hidden & {
-    transform: translate(-50%, -50%) ;
+    transform: translate(-50%, -50%);
     opacity: 0;
     visibility: hidden;
   }
@@ -65,9 +69,6 @@
   margin-bottom: 50px;
   padding: 10px;
 }
-
-
-
 
 .close-modal-btn {
   position: absolute;
@@ -109,9 +110,8 @@
   outline: none;
 }
 
-
-.modal-input:focus~.modal-label,
-.modal-input:not(:placeholder-shown)~.modal-label {
+.modal-input:focus ~ .modal-label,
+.modal-input:not(:placeholder-shown) ~ .modal-label {
   transform: translateY(-44px) translateX(-16px) scale(0.9);
 }
 
