@@ -1,31 +1,31 @@
 User-agent: Googlebot
-Disallow:
+Allow:
 
 User-agent: Googlebot-Image
-Disallow:
+Allow:
 
 User-agent: Googlebot-Mobile
-Disallow:
+Allow:
 
 User-agent: Googlebot-News
-Disallow:
+Allow:
 
 User-agent: Googlebot-Video
-Disallow:
+Allow:
 
 User-agent: Mediapartners-Google
-Disallow:
+Allow:
 
 User-agent: AdsBot-Google
-Disallow:
+Allow:
 
 User-agent: facebookexternalhit
-Disallow:
+Allow:
 
 User-agent: LinkedInBot
-Disallow:
+Allow:
 
 User-agent: Bingbot
-Disallow:
+Allow:
 
 Sitemap: https://www.avtoshkoladriver.com.ua/sitemap.xml
