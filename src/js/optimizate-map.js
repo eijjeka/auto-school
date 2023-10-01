@@ -8,10 +8,8 @@ function handleScroll() {
   if (map.style.display === 'block') {
     return;
   }
-  screenWidth = window.innerWidth;
-  console.log('screenWidth: ', screenWidth);
 
-  if (positionCreditSection.top <= 0 && screenWidth <= 768) {
+  if (positionCreditSection.top <= 0) {
     map.style.display = 'block';
   }
 }
