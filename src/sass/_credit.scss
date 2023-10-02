@@ -72,8 +72,15 @@
 
 .credit-information-title {
   margin-bottom: 25px;
-  font-size: 24px;
+  font-size: 18px;
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
 }
 
 .credit-information-pre {
